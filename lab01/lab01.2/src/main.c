@@ -1,5 +1,7 @@
 #include "app.h"
 
+#define DEFAULT_PRECISION 3
+
 int main()
 {
     double x, a, b;
@@ -15,6 +17,15 @@ int main()
 
     double result = exp(2*x - a) + log(x - b)/(a-x);
 
-    printf("Result: %.5f\n", result);
+    printf("Enter precision (default is %d):", DEFAULT_PRECISION);
+    int precision;
+    ret = scanf("%d", &precision);
+
+    if (ret < 1 || precision < 1)
+    {
+        precision = DEFAULT_PRECISION;
+    }
+
+    printf("Result (with %d digits): %.3f\n", precision, result);
     return 0;
 }

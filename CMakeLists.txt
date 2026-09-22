@@ -10,7 +10,16 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../dist/lib")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../dist/bin")
 
 if (LINUX)
- list(APPEND COMMON_DEPS m)
+ list(APPEND COMMON_DEPS pthread m)
+endif()
+
+if (CMAKE_COMPILER_IS_GNUCXX)
+ add_definitions (-Wall -pedantic)
+endif()
+
+if(MSVC)
+ add_definitions (/W4)
+ add_compile_definitions(_USE_MATH_DEFINES)
 endif()
 
 add_subdirectory("examples")

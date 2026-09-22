@@ -6,6 +6,8 @@ int main()
 
     double result = exp(2*x - a) + log(x - b)/(a-x);
 
+    printf("Result: %.3f\n", result);
     printf("Result: %.5f\n", result);
+
     return 0;
 }

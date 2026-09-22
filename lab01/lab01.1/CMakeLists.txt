@@ -1,4 +1,4 @@
-project("task1")
+project("lab01.1")
 
 include_directories(include)
 

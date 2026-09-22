@@ -7,3 +7,5 @@ build
 *.dll
 target
 dist
+.idea
+cmake-build*
