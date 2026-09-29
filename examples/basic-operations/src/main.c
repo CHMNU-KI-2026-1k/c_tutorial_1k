@@ -24,6 +24,17 @@ int main()
     r = a % b;
 
     printf("a %% b=%d\n", r);
+
+    /*
+    135/14=9
+    135-126=11
+   
+    */
+
+    srand(time(NULL));
+
+    int attempt = rand() % 6 + 1;
     
+    printf("Attempt %d\n", attempt);
     return 0;
 }
