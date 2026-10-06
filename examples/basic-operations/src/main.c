@@ -36,5 +36,10 @@ int main()
     int attempt = rand() % 6 + 1;
     
     printf("Attempt %d\n", attempt);
+
+	double f = log10(1002) + log(11);
+    
+    printf("f = %f\n", f);
+
     return 0;
 }
