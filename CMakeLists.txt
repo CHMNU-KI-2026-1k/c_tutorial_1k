@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.10)
 
-project ("c_1k_1s")
+project ("000")
 
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
