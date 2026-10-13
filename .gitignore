@@ -9,3 +9,4 @@ target
 dist
 .idea
 cmake-build*
+out
